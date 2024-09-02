@@ -1,78 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: white;
 }
 
-header {
-    text-align: center;
-    padding: 20px 0;
+.hero-section {
+    height: 100vh;
     background-image: url('/modwooder.webp'); /* Reemplaza con la ruta a tu imagen */
     background-size: cover;
     background-position: center;
-    height: 600px;
-    color: white; /* Asegura que el texto sea legible sobre la imagen */
-}
-
-
-.header img {
-    max-width: 800px;
-    padding-top: 100px;
-}
-
-main {
-    padding: 20px;
-}
-
-.mods-list {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
     gap: 20px;
 }
 
-.mod {
-    background-color: white;
-    width: 80%;
-    max-width: 800px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    transition: transform 0.2s;
-}
-
-.mod img {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-    border-radius: 10px;
-}
-
-.mod-info {
-    flex: 1;
-}
-
-.mod h2 {
-    margin-top: 0;
-}
-
-.download-btn {
-    padding: 10px 20px;
-    background-color: #282c34;
+.nav-links li a {
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.download-btn:hover {
+.nav-links li a:hover {
+    color: #61dafb;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0;
+    padding: 20px 50px;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    margin: 10px 0;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #61dafb;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.mod:hover {
-    transform: scale(1.02);
+.cta:hover {
+    background-color: #21a1f1;
 }
