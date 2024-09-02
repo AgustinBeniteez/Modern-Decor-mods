@@ -37,3 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateNotification(currentSlide);
     setInterval(nextSlide, 6000); // Cambia la imagen cada 3 segundos
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.hero-section').style.backgroundImage = "url('header.webp')";
+});
