@@ -5,7 +5,7 @@ body {
     background-color: #f4f4f4;
     color: white;
     overflow-x: hidden; /* Asegura que no haya scroll horizontal */
-    
+    zoom: 100%;
 }
 
 .hero-section {
@@ -175,42 +175,75 @@ body {
     gap: 20px;
     padding: 20px;
     height: 500px;
+    padding-bottom: 100px;
 }
 
+
 .card {
+    position: relative;
     background-color: #fff;
     color: #000;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(25% - 20px); /* Tres tarjetas por fila con espacio */
+    width: calc(33% - 10px); /* Tres tarjetas por fila con espacio */
     margin-bottom: 20px;
     transition: transform 0.3s ease;
-    height: 48%;
+    height: 58%;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-.card img {
-    width: 50%;
-    height: auto;
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Puedes ajustar la altura como necesites */
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para que cubra todo el contenedor */
     display: block;
+    transition: filter 0.5s ease;
 }
 
 .card-content {
-    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    color: white;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease;
 }
 
 .card-content h3 {
     margin: 0 0 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .card-content p {
     margin: 0;
     font-size: 1rem;
+}
+
+.card:hover .card-content {
+    opacity: 1; /* Muestra el texto al pasar el cursor */
+}
+
+.card:hover .card-image img {
+    filter: blur(4px) brightness(70%); /* Difumina y oscurece la imagen */
 }
 
 /* SCROLL */
