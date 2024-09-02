@@ -4,7 +4,8 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: white;
-    overflow: hidden; /* Oculta el contenido que sobresale del contenedor */
+    overflow-x: hidden; /* Asegura que no haya scroll horizontal */
+    
 }
 
 .hero-section {
@@ -161,4 +162,71 @@ body {
 
 .btn-notification:hover {
     background-color: #21a1f1;
+}
+
+.main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.mods-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    height: 500px;
+}
+
+.card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Tres tarjetas por fila con espacio */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    height: 48%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* SCROLL */
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #4d382a; /* Color de la pista de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b4adb0; /* Color del "pulgar" de la barra de desplazamiento */
+    border-radius: 15px; /* Bordes redondeados del pulgar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #707070; /* Color del pulgar cuando se pasa el cursor sobre él */
 }
