@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'Información sobre la primera imagen.',
         'Información sobre la segunda imagen.',
         'Información sobre la tercera imagen.',
-        'Información sobre la cuarta imagen.',
         // Añade más mensajes si tienes más imágenes
     ];
 
