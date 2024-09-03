@@ -40,7 +40,7 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #61dafb;
+    color: #a07d48;
 }
 
 .hero-content {
@@ -72,7 +72,7 @@ body {
 .cta {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #61dafb;
+    background-color: #c7955d;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -81,7 +81,7 @@ body {
 }
 
 .cta:hover {
-    background-color: #21a1f1;
+    background-color: #533c31;
 }
 
 .hero-image-slider {
@@ -109,10 +109,6 @@ body {
 .hero-image-slider img.active {
     opacity: 1;
 }
-
-
-
-
 
 .hero-image-slider img.active {
     opacity: 1;
@@ -152,7 +148,7 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #61dafb;
+    background-color: #caae71;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -161,7 +157,7 @@ body {
 }
 
 .btn-notification:hover {
-    background-color: #21a1f1;
+    background-color: #a7855a;
 }
 
 .main {
@@ -291,3 +287,172 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #707070; /* Color del pulgar cuando se pasa el cursor sobre él */
 }
+
+
+
+/* Estilos para pantallas pequeñas, como móviles */
+@media (max-width: 600px) {
+    .card {
+        position: relative;
+        background-color: #fff;
+        color: #000;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: calc(100% - 10px); /* Tres tarjetas por fila con espacio */
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+        height: 58%;
+    }
+    
+    .hero-image-slider {
+        position: absolute;
+        top: 50%;
+        left: 28.2%;
+        transform: translate(-50%, -50%);
+        width: 130%;
+        height: 60%;
+        overflow: hidden;
+        z-index: 1; /* Asegura que esté por encima del fondo pero debajo del texto */
+    }
+    
+    .hero-image-slider img {
+        position: absolute;
+        top: 27.8%;
+        left: 28%;
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+    
+    .hero-image-slider img.active {
+        opacity: 1;
+    }
+    
+    .hero-image-slider img.active {
+        opacity: 1;
+    }
+    
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    
+    .nav-links li a:hover {
+        color: #644d3a;
+    }
+    
+    .hero-content {
+        max-width: 600px;
+        margin-top: 5%;
+        margin-bottom: 60%;
+        padding: 20px 50px;
+        text-align: left;
+        align-self: flex-start;
+        z-index: 2; /* Asegura que esté por encima del fondo pero debajo del texto */
+    }
+    
+    .hero-content h1 {
+        font-size: 4rem;
+        margin: 10px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0;
+    }
+    
+    .hero-content p {
+        margin: 20px 0;
+        line-height: 1.5;
+    }
+    h1{
+        font-size: 1rem;
+    }
+  }
+  
+  /* Estilos para pantallas medianas, como tabletas */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .card {
+        position: relative;
+        background-color: #fff;
+        color: #000;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: calc(50% - 10px); /* Tres tarjetas por fila con espacio */
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+        height: 58%;
+    }
+    
+    .hero-image-slider {
+        position: absolute;
+        top: 50%;
+        left: 35.2%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 60%;
+        overflow: hidden;
+        z-index: 1; /* Asegura que esté por encima del fondo pero debajo del texto */
+    }
+    
+    .hero-image-slider img {
+        position: absolute;
+        top: 27.8%;
+        left: 28%;
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+    
+    .hero-image-slider img.active {
+        opacity: 1;
+    }
+    
+    .hero-image-slider img.active {
+        opacity: 1;
+    }
+    
+  }
+  
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+    .hero-image-slider {
+        position: absolute;
+        top: 50%;
+        left: 41.2%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 60%;
+        overflow: hidden;
+        z-index: 1; /* Asegura que esté por encima del fondo pero debajo del texto */
+    }
+    
+    .hero-image-slider img {
+        position: absolute;
+        top: 27.8%;
+        left: 28%;
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+    
+    .hero-image-slider img.active {
+        opacity: 1;
+    }
+    
+    .hero-image-slider img.active {
+        opacity: 1;
+    }
+    
+   }
