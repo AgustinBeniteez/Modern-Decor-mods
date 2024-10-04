@@ -206,6 +206,8 @@ header {
 .nav-buttons {
     display: flex;
     gap: 10px;
+    list-style: none; /* Quita los puntos de la lista si es necesario */
+    text-decoration: none; /* Quita el subrayado */
 }
 
 .nav-btn{
@@ -218,6 +220,8 @@ font-size: 20px;
 font-weight: bold;
 cursor: pointer;
 margin: 5px;
+list-style: none; /* Quita los puntos de la lista si es necesario */
+text-decoration: none; /* Quita el subrayado */
 }
 
 .about-btn {
