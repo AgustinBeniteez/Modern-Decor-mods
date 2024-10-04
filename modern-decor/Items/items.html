@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Objetos</title>
+    <link rel="stylesheet" href="css/style-items.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=KonkhmerSleokchher&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-buttons">
+                <button class="nav-btn">home</button>
+                <button class="nav-btn">Downloads</button>
+            </div>
+            <div class="logo-container">
+                <span class="items-text">Items</span>
+                <div class="modern-decor-container">
+                    <span class="modern-decor-text">modern Decor</span>
+                    <span class="mods-text">mods</span>
+                </div>
+            </div>
+            <button class="about-btn"><img style="width:60px;" src="/modern-decor/agusthekinglogo.webp" alt="agustheking logo"></button>
+        </header>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Buscar ítems...">
+            <div id="suggestions" class="suggestions-box"></div>
+            
+               <!-- Botones de filtros rápidos -->
+    <div id="mod-buttons">
+        <button onclick="filterByMod('modern decor wooden')">Modern Decor Wooden</button>
+        <button onclick="filterByMod('modern decor outdoor')">Modern Decor Outdoor</button>
+        <button id="all-button" class="mod-button">All</button>
+    </div>
+        </div>
+        
+        <div class="main-container"> <!-- Nuevo contenedor para filtros y catálogo -->
+            <section>
+                <div class="filter-group">
+                    <h3>Colores:</h3>
+                    <label class="color-gris">
+                        <input type="checkbox" name="color" value="gris" onchange="filterItems()">
+                        <span class="custom-checkbox"></span> Gris
+                    </label>
+                    <label class="color-rosa">
+                        <input type="checkbox" name="color" value="rosa" onchange="filterItems()">
+                        <span class="custom-checkbox"></span> Rosa
+                    </label>
+                    <label class="color-blanco">
+                        <input type="checkbox" name="color" value="blanco" onchange="filterItems()">
+                        <span class="custom-checkbox"></span> Blanco
+                    </label>
+                    <label class="color-negro">
+                        <input type="checkbox" name="color" value="negro" onchange="filterItems()">
+                        <span class="custom-checkbox"></span> Negro
+                    </label>
+                </div>
+            
+                <div class="filter-group">
+                    <h3>Categorías:</h3>
+                    <label>
+                        <input type="checkbox" name="category" value="furniture" onchange="filterItems()">
+                        <span class="custom-checkbox"></span> Furniture
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="iluminacion" onchange="filterItems()">
+                        <span class="custom-checkbox"></span> Iluminación
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="informatica" onchange="filterItems()">
+                        <span class="custom-checkbox"></span> Informática
+                    </label>
+                </div>
+            </section>
+            
+            
+            
+    
+            <section class="catalog" id="catalog">
+                <div class="item-card">
+                    <img src="ruta/a/tu-imagen.jpg" alt="Descripción del objeto">
+                    <div class="item-content">
+                        <h3>Sofa</h3>
+                        <p>Item ocupa 3 bloques y sirve para sentarse</p>
+                        <div class="color-categories">
+                            <div class="colors">
+                                <strong>Colores:</strong> gris, rosa, blanco
+                            </div>
+                            <div class="categories">
+                                <strong>Categorías:</strong> furniture, iluminación, informática
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </section>
+        </div> <!-- Fin del contenedor principal -->
+    </div>
+    <script src="script-items-search.js"></script>
+    <script src="scriptpopup.js"></script>
+</body>
+</html>

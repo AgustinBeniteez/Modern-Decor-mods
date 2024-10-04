@@ -1,0 +1,366 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f;
+    font-family: sans-serif;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'KonkhmerSleokchher-Regular';
+    src: url('fonts/KonkhmerSleokchher-Regular.ttf') format('truetype');
+}
+
+/* Clase para ocultar elementos inicialmente */
+.hidden {
+    opacity: 0; /* Comienza invisible */
+    
+}
+
+/* Clase para mostrar elementos */
+.visible {
+    opacity: 1; /* Totalmente visible */
+    transition: opacity 0.5s ease-in; /* Transición suave para la opacidad */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; /* Esto oculta cualquier scroll horizontal */
+}
+
+.main-container {
+    display: flex; /* Para alinear filtros y catálogo */
+    width: 90%; /* Ajusta este valor según el tamaño deseado */
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 800px;
+    height: 25px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    margin: 10px;
+    background-color: #424242;
+    color: #ffffff;
+}
+
+.filters {
+    width: 25%; /* Ajusta este valor según el tamaño deseado */
+    background-color: #424242;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.filter-group label {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #000; /* Borde negro por defecto */
+    border-radius: 50px;
+    padding: 5px 15px; /* Ajusta el padding para el espacio alrededor */
+    margin: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative; /* Para posicionar el círculo interior */
+    transition: background-color 0.3s; /* Transición suave para el cambio de fondo */
+}
+
+/* Fondo específico para cada color */
+.color-gris {
+    background-color: gray; /* Fondo gris */
+}
+
+.color-rosa {
+    background-color: pink; /* Fondo rosa */
+}
+
+.color-blanco {
+    background-color: white; /* Fondo blanco */
+    color: rgb(0, 0, 0); /* Letras blancas para el fondo negro */
+}
+
+.color-negro {
+    background-color: black; /* Fondo negro */
+    color: white; /* Letras blancas para el fondo negro */
+}
+
+/* Ocultar el checkbox nativo */
+.filter-group label input[type="checkbox"] {
+    display: none; /* Oculta el checkbox original */
+}
+
+/* Círculo que simula el checkbox */
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #000; /* Borde negro por defecto */
+    position: relative;
+    transition: background-color 0.3s;
+    background-color: rgb(90, 90, 90);
+}
+
+/* Efecto al seleccionar el checkbox */
+.filter-group label input[type="checkbox"]:checked + .custom-checkbox {
+    background: linear-gradient(
+        102.42deg,
+        rgba(82, 127, 152, 1) 0%,
+        rgba(142, 76, 193, 1) 100%
+      );
+    border: 2px solid #000; /* Mantiene el borde negro */
+}
+
+/* Estilo para las categorías (grises) */
+.filter-group label input[name="category"] + .custom-checkbox {
+    background-color: lightgray; /* Fondo gris para categorías */
+}
+
+
+/* Estilos específicos para los colores */
+.custom-checkbox.gris {
+    background-color: gray; /* Fondo gris */
+}
+
+.custom-checkbox.rosa {
+    background-color: pink; /* Fondo rosa */
+}
+
+.custom-checkbox.blanco {
+    background-color: white; /* Fondo blanco */
+    border: 2px solid #000; /* Borde negro para el checkbox blanco */
+}
+
+.custom-checkbox.negro {
+    background-color: black; /* Fondo negro */
+}
+
+
+
+.catalog {
+    width: 75%; /* Aumenta el ancho para que las tarjetas sean más anchas */
+    display: flex; /* Cambia a flex para apilar las tarjetas verticalmente */
+    flex-direction: column; /* Asegúrate de que las tarjetas se apilen */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin: 10px;
+}
+
+.item-card {
+    display: flex; /* Usamos flexbox para alinear imagen y contenido */
+    background-color: #383838;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 7px;
+}
+
+.item-card img {
+    width: 350px; /* Ajusta el ancho de la imagen según necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en una columna */
+    justify-content: flex-start; /* Alinea el contenido hacia arriba */
+}
+
+.item-card h3 {
+    margin: 0; /* Elimina el margen superior e inferior */
+}
+
+.item-card p {
+    margin: 5px 0; /* Espacio entre el título y la descripción */
+    color: #ffffff; /* Cambia el color del texto según lo necesites */
+}
+
+.color-categories {
+    margin-top: 10px; /* Espacio entre la descripción y los colores/categorías */
+}
+
+.colors, .categories {
+    margin: 5px 0; /* Espacio entre cada sección */
+    color: #ffffff; /* Cambia el color del texto según lo necesites */
+    font-size: 14px; /* Ajusta el tamaño de la fuente según lo necesites */
+}
+
+
+
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn{
+background-color: #707070;
+color: white;
+border: none;
+border-radius: 220px;
+padding: 5px 15px;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+margin: 5px;
+}
+
+.about-btn {
+    background-color: #2b2b2b;
+    color: white;
+    border: none;
+    border-radius: 220px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-btn:hover, .about-btn:hover {
+    background-color: #555353;
+    
+}
+
+.about-btn {
+    margin-right: 20px;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.items-text {
+    color: #ffffff;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 140px;
+    line-height: 115.45%;
+    font-weight: 400;
+    margin-left: -30px;
+ 
+    position: relative;
+}
+
+.modern-decor-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 320px; /* Ajusta este valor para posicionar modern Decor y mods */
+    top: 60px; /* Ajusta este valor según la posición */
+}
+
+.modern-decor-text {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'League Gothic', sans-serif; /* De Google Fonts */
+    font-size: 63px;
+    line-height: 132.37%;
+    font-weight: 400;
+    position: relative;
+    width: 249px;
+    height: 81px;
+    margin-bottom: -10px; /* Ajusta el espacio entre modern decor y mods */
+}
+
+.mods-text {
+    color: #ffffff;
+    font-family: 'La Belle Aurore', cursive; /* De Google Fonts */
+    font-size: 64px;
+    line-height: 132.37%;
+    font-weight: 400;
+    position: relative;
+    margin-top: -10px; /* Ajusta este valor para acercar mods a modern decor */
+}
+
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del popup */
+}
+
+.close-button {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #aaa;
+}
+
+#mod-buttons {
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#mod-buttons button {
+    padding: 8px 12px;
+    border: none;
+    background-color:  #3d3d3d;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+#mod-buttons button:hover {
+    background-color: #7e8080;
+}
+
+.suggestions-box {
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: rgba(71, 71, 71, 0.959);
+    z-index: 1000;
+    width: 100%;
+    border-radius: 20px;
+    width: 400px;
+
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    
+}
+
+.suggestion-item:hover {
+    background-color: #5f5f5f;
+}
+
+.mod-button.active {
+    background-color: #007BFF; /* Cambia el color a tu elección */
+    color: white; /* Cambia el color del texto */
+}

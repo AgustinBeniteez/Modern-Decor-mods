@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #2b2b2b;
     color: white;
     overflow-x: hidden; /* Asegura que no haya scroll horizontal */
     zoom: 100%;
@@ -177,7 +177,7 @@ body {
 
 .card {
     position: relative;
-    background-color: #fff;
+    background-color: #3f3f3f;
     color: #000;
     border-radius: 8px;
     overflow: hidden;

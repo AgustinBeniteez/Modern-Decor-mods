@@ -1,0 +1,60 @@
+{
+    "items": [
+        {
+            "name": "Sofa",
+            "image": "imgs/sofa.webp",
+            "description": "Item ocupa 3 bloques y sirve para sentarse",
+            "colors": ["gris", "rosa", "blanco"],
+            "categories": ["furniture", "iluminacion", "informatica"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "Tumbona",
+            "image": "imgs/tumbona.webp",
+            "description": "Item ocupa 2 bloques y sirve para Decorar",
+            "colors": ["gris"],
+            "categories": ["furniture"],
+            "mod": "modern decor outdoor"
+        },
+        {
+            "name": "flamenco",
+            "image": "imgs/flamenco.webp",
+            "description": "Item ocupa 1 bloques y sirve sentarse",
+            "colors": ["rosa"],
+            "categories": ["furniture"],
+            "mod": "modern decor outdoor"
+        },
+        {
+            "name": "barbacoa",
+            "image": "imgs/barbacoa.webp",
+            "description": "Item ocupa 2 bloques y sirve para Decorar",
+            "colors": ["negro"],
+            "categories": ["furniture"],
+            "mod": "modern decor outdoor"
+        },
+        {
+            "name": "Mesa Desktop",
+            "image": "imgs/sofa.webp",
+            "description": "Item ocupa 2 bloques y sirve para poner encima PC etc.",
+            "colors": ["negro", "blanco"],
+            "categories": ["furniture", "informatica"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "PC",
+            "image": "imgs/sofa.webp",
+            "description": "Item ocupa 2 bloques y sirve para poner encima PC etc.",
+            "colors": ["negro", "blanco"],
+            "categories": ["furniture", "informatica"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "silla",
+            "image": "imgs/sofa.webp",
+            "description": "Item ocupa 2 bloques y sirve para poner encima PC etc.",
+            "colors": ["negro", "blanco"],
+            "categories": ["furniture", "informatica"],
+            "mod": "modern decor wooden"    
+        }
+    ]
+}

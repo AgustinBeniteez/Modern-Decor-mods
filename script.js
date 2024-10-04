@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const notificationText = document.getElementById('notification-text');
 
     const notifications = [
-        'Información sobre la primera imagen.',
-        'Información sobre la segunda imagen.',
-        'Información sobre la tercera imagen.',
+        ' V: 1.20.1 / 1.19.4 / 1.19.2 / 1.16.5 / 1.14.4 ',
+        'More mods addded in CurseForge',
+        'you can sit in chairs :)',
         // Añade más mensajes si tienes más imágenes
     ];
 
