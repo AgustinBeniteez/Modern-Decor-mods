@@ -36,7 +36,7 @@ header {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Coloca los elementos en columna */
     align-items: center;
     overflow-x: hidden; /* Esto oculta cualquier scroll horizontal */
 }
@@ -369,4 +369,198 @@ text-decoration: none; /* Quita el subrayado */
 .mod-button.active {
     background-color: #007BFF; /* Cambia el color a tu elección */
     color: white; /* Cambia el color del texto */
+}
+.hidden-image {
+    display: none; /* Oculta la imagen por defecto */
+}
+
+/* Para navegadores web modernos */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c; /* Fondo del track */
+    border-radius: 8px; /* Border radius para el track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7d7d7d; /* Color del scrollbar */
+    border-radius: 8px; /* Border radius para el thumb */
+}
+
+/* Para Firefox */
+.scrollable {
+    scrollbar-width: thin; /* Hacer el scrollbar más delgado */
+    scrollbar-color: #7d7d7d #2c2c2c; /* Color del thumb y del track */
+}
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+
+    
+    .filters {
+        order: 1; /* Asegúrate de que los filtros aparezcan primero */
+        margin-bottom: 20px; /* Espacio entre filtros y resultados */
+    }
+
+    .results {
+        order: 2; /* Resultados aparecen después de los filtros */
+    }
+    .catalog {
+        width: 75%; /* Aumenta el ancho para que las tarjetas sean más anchas */
+        display: flex; /* Cambia a flex para apilar las tarjetas verticalmente */
+        flex-direction: column; /* Asegúrate de que las tarjetas se apilen */
+        gap: 20px; /* Espacio entre las tarjetas */
+        margin: 10px;
+    }
+    
+    .item-card {
+        display: flex; /* Usamos flexbox para alinear la imagen y el contenido */
+        flex-direction: column; /* Cambia a columna para que la imagen esté arriba y el contenido abajo */
+        background-color: #383838;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 7px;
+    }
+    
+    .item-card img {
+        width: 230px; /* Ajusta el ancho de la imagen según necesites */
+        height: 150px; /* Mantiene la proporción de la imagen */
+        margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
+    }
+    
+    .item-content {
+        display: block;
+        flex-direction: column; /* Organiza el contenido en una columna */
+        justify-content: flex-start; /* Alinea el contenido hacia arriba */
+    }
+    
+    .item-card h3 {
+        margin: 0; /* Elimina el margen superior e inferior */
+    }
+    
+    .item-card p {
+        margin: 5px 0; /* Espacio entre el título y la descripción */
+        color: #ffffff; /* Cambia el color del texto según lo necesites */
+    }
+    
+    .color-categories {
+        margin-top: 10px; /* Espacio entre la descripción y los colores/categorías */
+    }
+    
+    .colors, .categories {
+        margin: 5px 0; /* Espacio entre cada sección */
+        color: #ffffff; /* Cambia el color del texto según lo necesites */
+        font-size: 14px; /* Ajusta el tamaño de la fuente según lo necesites */
+    }
+    
+    .result-item {
+        width: 100%; /* Asegúrate que cada elemento de resultado ocupe el 100% */
+        margin-bottom: 15px; /* Espacio entre resultados */
+    }
+
+    .filters {
+        /* Estilo de filtros en portátiles, si es necesario */
+        margin-bottom: 20px; /* Espacio entre filtros y resultados */
+    }
+    .nav-btn  {
+        display: none; /* Oculta los botones de navegación */
+    }
+    .about-btn  {
+        display: none; /* Oculta el botón de acerca de */
+    }
+    .items-text {
+        position: relative; /* Añade esto */
+        color: transparent; /* Oculta el texto haciéndolo transparente */
+        background-color: transparent; /* Asegúrate de que el fondo no tenga color */
+    }
+    
+
+    .hidden-image {
+        display: block; /* Muestra la imagen en pantallas menores a 600px */
+        width: 100%; /* Ajusta el ancho según sea necesario */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+    
+    .items-text h3, /* Asegúrate de ocultar el texto también si es necesario */
+    .items-text p {
+        display: none; /* Oculta el texto en pantallas menores a 600px */
+    }
+    .filters1{
+        order: 1; /* Asegúrate de que los filtros aparezcan primero */
+        margin-bottom: 20px; /* Espacio entre filtros y resultados */
+    }
+    .results {
+        order: 2; /* Resultados aparecen después de los filtros */
+    }
+}
+
+/* Media Query para portátiles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .filters {
+        order: 1; /* Asegúrate de que los filtros aparezcan primero */
+        margin-bottom: 20px; /* Espacio entre filtros y resultados */
+    }
+
+  
+
+    .catalog {
+        width: 75%; /* Aumenta el ancho para que las tarjetas sean más anchas */
+        display: flex; /* Cambia a flex para apilar las tarjetas verticalmente */
+        flex-direction: column; /* Asegúrate de que las tarjetas se apilen */
+        gap: 20px; /* Espacio entre las tarjetas */
+        margin: 10px;
+    }
+    
+    .item-card {
+        display: flex; /* Usamos flexbox para alinear la imagen y el contenido */
+        flex-direction: column; /* Cambia a columna para que la imagen esté arriba y el contenido abajo */
+        background-color: #383838;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 7px;
+    }
+    
+    .item-card img {
+        width: 250px; /* Ajusta el ancho de la imagen según necesites */
+        height: 150px; /* Mantiene la proporción de la imagen */
+        margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
+    }
+    
+    .item-content {
+        display: block;
+        flex-direction: column; /* Organiza el contenido en una columna */
+        justify-content: flex-start; /* Alinea el contenido hacia arriba */
+    }
+    
+    .item-card h3 {
+        margin: 0; /* Elimina el margen superior e inferior */
+    }
+    
+    .item-card p {
+        margin: 5px 0; /* Espacio entre el título y la descripción */
+        color: #ffffff; /* Cambia el color del texto según lo necesites */
+    }
+    
+    .color-categories {
+        margin-top: 10px; /* Espacio entre la descripción y los colores/categorías */
+    }
+    
+    .colors, .categories {
+        margin: 5px 0; /* Espacio entre cada sección */
+        color: #ffffff; /* Cambia el color del texto según lo necesites */
+        font-size: 14px; /* Ajusta el tamaño de la fuente según lo necesites */
+    }
+    
+    .result-item {
+        width: 100%; /* Asegúrate que cada elemento de resultado ocupe el 100% */
+        margin-bottom: 15px; /* Espacio entre resultados */
+    }
+
+    .filters {
+        /* Estilo de filtros en portátiles, si es necesario */
+        margin-bottom: 20px; /* Espacio entre filtros y resultados */
+    }
+    
+
 }

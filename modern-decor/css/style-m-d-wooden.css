@@ -158,6 +158,28 @@ nav ul li a:hover {
     color: white;
 }
 
+/* Para navegadores web modernos */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c; /* Fondo del track */
+    border-radius: 8px; /* Border radius para el track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7d7d7d; /* Color del scrollbar */
+    border-radius: 8px; /* Border radius para el thumb */
+}
+
+/* Para Firefox */
+.scrollable {
+    scrollbar-width: thin; /* Hacer el scrollbar más delgado */
+    scrollbar-color: #7d7d7d #2c2c2c; /* Color del thumb y del track */
+}
+
+
 /* Media Query for Mobile */
 @media (max-width: 768px) {
     /* Permitir scroll en móvil */
