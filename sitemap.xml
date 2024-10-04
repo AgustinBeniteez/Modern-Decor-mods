@@ -9,7 +9,23 @@
 
 <url>
   <loc>https://agustinbeniteez.github.io/Modern-Decor-mods/</loc>
-  <lastmod>2024-09-17T17:21:52+00:00</lastmod>
+  <lastmod>2024-10-04T19:44:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://agustinbeniteez.github.io/Modern-Decor-mods/modern-decor/modern-decor-wooden.html</loc>
+  <lastmod>2024-10-04T19:44:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://agustinbeniteez.github.io/Modern-Decor-mods/index.html</loc>
+  <lastmod>2024-10-04T19:44:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://agustinbeniteez.github.io/Modern-Decor-mods/modern-decor/Items/items.html</loc>
+  <lastmod>2024-10-04T19:44:29+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
