@@ -294,7 +294,6 @@ body {
 @media (max-width: 600px) {
     .card {
         position: relative;
-        background-color: #fff;
         color: #000;
         border-radius: 8px;
         overflow: hidden;
@@ -380,7 +379,6 @@ body {
   @media (min-width: 601px) and (max-width: 1024px) {
     .card {
         position: relative;
-        background-color: #fff;
         color: #000;
         border-radius: 8px;
         overflow: hidden;
