@@ -190,6 +190,11 @@ body {
 
 .card:hover {
     transform: scale(1.05);
+    border-style: solid;
+    border-color: #ffffff;
+    margin-bottom: 16px;
+    margin-left: -2px;
+    border-width: 2px;
 }
 
 .card-image {
@@ -236,10 +241,12 @@ body {
 
 .card:hover .card-content {
     opacity: 1; /* Muestra el texto al pasar el cursor */
+    
 }
 
 .card:hover .card-image img {
     filter: blur(4px) brightness(70%); /* Difumina y oscurece la imagen */
+    
 }
 .btn-card{
     margin: 10px;
