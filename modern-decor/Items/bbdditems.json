@@ -4,14 +4,94 @@
             "name": "Sofa",
             "image": "imgs/sofa.webp",
             "description": "Item ocupa 3 bloques y sirve para sentarse",
-            "colors": ["gris", "rosa", "blanco"],
-            "categories": ["furniture", "iluminacion", "informatica"],
+            "colors": ["gris"],
+            "categories": ["furniture"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "Desktop",
+            "image": "imgs/desktop.webp",
+            "description": "Item ocupa 2 bloques y sirve para poner encima o debajo PC etc.",
+            "colors": ["negro", "blanco"],
+            "categories": ["furniture", "informatica"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "PCs",
+            "image": "imgs/pcs.webp",
+            "description": "Item ocupa 2 bloques y sirve para poner encima o debajo del desktop",
+            "colors": ["negro", "blanco", "rosa"],
+            "categories": ["furniture", "informatica"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "Chairs Gaming",
+            "image": "imgs/chairs.webp",
+            "description": "Item ocupa 2 bloques y sirve para sentarse",
+            "colors": ["negro", "blanco", "rosa"],
+            "categories": ["furniture", "informatica"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "Keyboards",
+            "image": "imgs/keyboard.webp",
+            "description": "Item ocupa 2 bloques y sirve para encima de desktop y decorar.",
+            "colors": ["negro", "blanco", "rosa"],
+            "categories": ["furniture", "informatica"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "Monitor",
+            "image": "imgs/monitor.webp",
+            "description": "Item ocupa 1 bloques y sirve para encima de desktop y decorar.",
+            "colors": ["negro", "blanco"],
+            "categories": ["furniture", "informatica"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "Dual Monitor",
+            "image": "imgs/monitordoble.webp",
+            "description": "Item ocupa 2 bloques y sirve para encima de desktop y decorar.",
+            "colors": ["negro", "blanco"],
+            "categories": ["furniture", "informatica"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "Neon lights",
+            "image": "imgs/neon.webp",
+            "description": "Item ocupa 2 bloques y sirve para decorar.",
+            "colors": ["blanco"],
+            "categories": ["iluminacion","furniture"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "Panels wood",
+            "image": "imgs/panelswood.webp",
+            "description": "Item ocupa 1 bloques y sirve para decorar paredes.",
+            "colors": ["madera","negro"],
+            "categories": ["furniture"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "glass table",
+            "image": "imgs/mesacristal.webp",
+            "description": "Item ocupa 2 bloques y sirve para decorar.",
+            "colors": ["gris","transparent"],
+            "categories": ["furniture"],
+            "mod": "modern decor wooden"    
+        },
+        {
+            "name": "Lamp",
+            "image": "imgs/lampara.webp",
+            "description": "Item ocupa 2 bloques Verticales y sirve para decorar.",
+            "colors": ["marron"],
+            "categories": ["iluminacion","furniture"],
             "mod": "modern decor wooden"    
         },
         {
             "name": "Tumbona",
             "image": "imgs/tumbona.webp",
-            "description": "Item ocupa 2 bloques y sirve para Decorar",
+            "description": "Item ocupa 2 bloques y sirve para sentarse",
             "colors": ["gris"],
             "categories": ["furniture"],
             "mod": "modern decor outdoor"
@@ -31,30 +111,6 @@
             "colors": ["negro"],
             "categories": ["furniture"],
             "mod": "modern decor outdoor"
-        },
-        {
-            "name": "Mesa Desktop",
-            "image": "imgs/sofa.webp",
-            "description": "Item ocupa 2 bloques y sirve para poner encima PC etc.",
-            "colors": ["negro", "blanco"],
-            "categories": ["furniture", "informatica"],
-            "mod": "modern decor wooden"    
-        },
-        {
-            "name": "PC",
-            "image": "imgs/sofa.webp",
-            "description": "Item ocupa 2 bloques y sirve para poner encima PC etc.",
-            "colors": ["negro", "blanco"],
-            "categories": ["furniture", "informatica"],
-            "mod": "modern decor wooden"    
-        },
-        {
-            "name": "silla",
-            "image": "imgs/sofa.webp",
-            "description": "Item ocupa 2 bloques y sirve para poner encima PC etc.",
-            "colors": ["negro", "blanco"],
-            "categories": ["furniture", "informatica"],
-            "mod": "modern decor wooden"    
         }
     ]
 }
