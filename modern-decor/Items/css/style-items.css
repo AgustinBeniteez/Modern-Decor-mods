@@ -477,9 +477,10 @@ text-decoration: none; /* Quita el subrayado */
     
 
     .hidden-image {
-        display: block; /* Muestra la imagen en pantallas menores a 600px */
-        width: 100%; /* Ajusta el ancho según sea necesario */
-        height: auto; /* Mantiene la proporción de la imagen */
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: -400px;
     }
     
     .items-text h3, /* Asegúrate de ocultar el texto también si es necesario */
