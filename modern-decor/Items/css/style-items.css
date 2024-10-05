@@ -394,6 +394,16 @@ text-decoration: none; /* Quita el subrayado */
     scrollbar-width: thin; /* Hacer el scrollbar más delgado */
     scrollbar-color: #7d7d7d #2c2c2c; /* Color del thumb y del track */
 }
+
+.nav-buttons1 {
+    display: none; /* Oculta el texto en pantallas menores a 600px */
+}
+
+.nav-btn1{
+    display: none; /* Oculta el texto en pantallas menores a 600px */
+}
+
+
 /* Media Query para dispositivos móviles */
 @media (max-width: 600px) {
 
@@ -502,17 +512,45 @@ text-decoration: none; /* Quita el subrayado */
     }
 
     
-.search-bar input {
-    padding: 10px;
-    width: 85%;
-    height: 25px;
-    border-radius: 30px;
+    .search-bar input {
+        padding: 10px;
+        width: 85%;
+        height: 25px;
+        border-radius: 30px;
+        border: none;
+        font-family: 'Konkhmer Sleokchher', sans-serif;
+        margin: 10px;
+        background-color: #424242;
+        color: #ffffff;
+    }
+
+    modern-decor-container {
+        display: none; /* Oculta el texto en pantallas menores a 600px */
+    
+    }
+    .nav-buttons1 {
+        display: flex;
+        gap: 10px;
+        list-style: none; /* Quita los puntos de la lista si es necesario */
+        text-decoration: none; /* Quita el subrayado */
+        margin: 5px;
+        margin-left: 15px;
+    }
+    
+    .nav-btn1{
+    display: flex;
+    background-color: #707070;
+    color: white;
     border: none;
-    font-family: 'Konkhmer Sleokchher', sans-serif;
-    margin: 10px;
-    background-color: #424242;
-    color: #ffffff;
-}
+    border-radius: 220px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none; /* Quita los puntos de la lista si es necesario */
+    text-decoration: none; /* Quita el subrayado */
+    
+    }
 
 }
 
@@ -582,6 +620,54 @@ text-decoration: none; /* Quita el subrayado */
         /* Estilo de filtros en portátiles, si es necesario */
         margin-bottom: 20px; /* Espacio entre filtros y resultados */
     }
+    .nav-buttons1 {
+        display: flex;
+        gap: 10px;
+        list-style: none; /* Quita los puntos de la lista si es necesario */
+        text-decoration: none; /* Quita el subrayado */
+        margin: 5px;
+        margin-left: 15px;
+    }
+    
+    .nav-btn1{
+    display: flex;
+    background-color: #707070;
+    color: white;
+    border: none;
+    border-radius: 220px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none; /* Quita los puntos de la lista si es necesario */
+    text-decoration: none; /* Quita el subrayado */
+    
+    }
+    .nav-btn  {
+        display: none; /* Oculta los botones de navegación */
+    }
+    .about-btn  {
+        display: none; /* Oculta el botón de acerca de */
+    }
+
+    .items-text {
+        color: #ffffff;
+        font-family: 'Konkhmer Sleokchher', sans-serif;
+        font-size: 140px;
+        line-height: 115.45%;
+        font-weight: 400;
+        margin-left: -670px;
+     
+        position: relative;
+    }
     
 
+    .modern-decor-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 320px; /* Ajusta este valor para posicionar modern Decor y mods */
+        top: 60px; /* Ajusta este valor según la posición */
+        margin-left: -650px;
+    }
 }
