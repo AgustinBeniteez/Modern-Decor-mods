@@ -424,7 +424,7 @@ text-decoration: none; /* Quita el subrayado */
     }
     
     .item-card img {
-        width: 230px; /* Ajusta el ancho de la imagen según necesites */
+        width: 220px; /* Ajusta el ancho de la imagen según necesites */
         height: 150px; /* Mantiene la proporción de la imagen */
         margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
     }
@@ -474,13 +474,12 @@ text-decoration: none; /* Quita el subrayado */
         color: transparent; /* Oculta el texto haciéndolo transparente */
         background-color: transparent; /* Asegúrate de que el fondo no tenga color */
     }
-    
 
     .hidden-image {
         display: block;
         width: 100%;
         height: auto;
-        margin-left: -400px;
+        margin-left: -360px;
     }
     
     .items-text h3, /* Asegúrate de ocultar el texto también si es necesario */
@@ -490,9 +489,16 @@ text-decoration: none; /* Quita el subrayado */
     .filters1{
         order: 1; /* Asegúrate de que los filtros aparezcan primero */
         margin-bottom: 20px; /* Espacio entre filtros y resultados */
+        margin-left: -10px;
     }
     .results {
         order: 2; /* Resultados aparecen después de los filtros */
+    }
+
+    .main-container {
+        display: flex; /* Para alinear filtros y catálogo */
+        width: 90%; /* Ajusta este valor según el tamaño deseado */
+        margin-left: -60px;
     }
 }
 
